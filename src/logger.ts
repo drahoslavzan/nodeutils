@@ -7,7 +7,7 @@ export interface ILogger {
    error(label: string, message: string, data?: object): void;
 }
 
-export default class Logger implements ILogger {
+export default class JsonLogger implements ILogger {
    debug(label: string, message: string, data?: object) {
       if (isProduction) return;
       console.log(this.make(label, message, 'debug', data));

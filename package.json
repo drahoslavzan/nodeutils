@@ -4,7 +4,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/drahoslavzan"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "type-check": "tsc --noEmit",
     "build": "rm -rf ./dist && tsc && cp package.json .npmrc ./dist",
