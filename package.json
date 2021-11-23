@@ -4,12 +4,15 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/drahoslavzan"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "type-check": "tsc --noEmit",
     "build": "rm -rf ./dist && tsc && cp package.json .npmrc ./dist",
     "publish": "cd ./dist && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.9",

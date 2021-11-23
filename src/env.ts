@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '.dev.env' });
+dotenv.config();
 
 export function getEnv(name: string): string {
     let v = process.env[name];
